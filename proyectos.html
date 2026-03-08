@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos — GeoSurvey Pro</title><!-- ★ CAMBIAR -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo"><div class="logo-diamond"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="2"><polygon points="12 2 22 20 2 20"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="16" x2="16" y2="16"/></svg></div><div class="logo-words"><div class="logo-name">GeoSurvey Pro</div><div class="logo-tag">Topografía & Geodesia</div></div></a><!-- ★ CAMBIAR -->
+    <div class="nav-links" id="navLinks"><a href="index.html">Inicio</a><a href="servicios.html">Servicios</a><a href="proyectos.html" class="active">Proyectos</a><a href="equipo.html">Equipo</a><a href="contacto.html" class="nav-cta">Contacto</a></div>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<div class="banner"><div class="banner-bg"></div><div class="banner-overlay"></div><div class="banner-content"><div class="breadcrumb"><a href="index.html">Inicio</a> › <span>Proyectos</span></div><h1 class="banner-title">Portafolio de<br>Proyectos</h1></div></div>
+
+<section style="background:var(--bg)">
+  <div class="wrap">
+    <div class="label reveal">Proyecto Insignia</div>
+    <!-- PROYECTO DESTACADO -->
+    <div class="featured reveal">
+      <div class="feat-img">
+        <!-- ★ Para imagen: <img src="images/proyecto-principal.jpg" alt="..."> -->
+        <svg width="58" height="58" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="1"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3"/></svg>
+        <span class="feat-img-lbl">Imagen 800×420 px</span>
+        <span class="feat-badge">Proyecto Destacado</span>
+      </div>
+      <div class="feat-content">
+        <div class="label" style="margin-bottom:1rem">Infraestructura Vial · 2023</div><!-- ★ CAMBIAR -->
+        <h2 style="font-family:var(--ff-h);font-size:2.2rem;font-weight:700;color:var(--text);line-height:1.05;margin-bottom:1rem">
+          Corredor Vial<br><span style="color:var(--gold)">Ruta del Pacífico</span><br>— 120 km<!-- ★ CAMBIAR -->
+        </h2>
+        <p style="color:var(--text2);font-size:1rem;line-height:1.85;margin-bottom:1.5rem">
+          Levantamiento topográfico integral de 120 km para el diseño de la segunda calzada, incluyendo 8 intersecciones, 14 puentes y 3 túneles.<!-- ★ CAMBIAR -->
+        </p>
+        <div class="feat-stats">
+          <div class="feat-stat"><strong>120 km</strong><span>Longitud</span></div><!-- ★ CAMBIAR -->
+          <div class="feat-stat"><strong>8 meses</strong><span>Duración</span></div>
+          <div class="feat-stat"><strong>±2 cm</strong><span>Precisión</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TODOS LOS PROYECTOS -->
+    <h2 class="h2 reveal" style="margin-bottom:1.5rem">Todos los<br><em>Proyectos</em></h2>
+    <div class="filters">
+      <button class="f-btn active" data-f="all">Todos</button>
+      <button class="f-btn" data-f="vial">Vial</button>
+      <button class="f-btn" data-f="hidro">Hidráulica</button>
+      <button class="f-btn" data-f="cat">Catastro</button>
+      <button class="f-btn" data-f="min">Minería</button>
+      <button class="f-btn" data-f="urb">Urbano</button>
+    </div>
+    <div class="proj-grid">
+      <!-- ★ CAMBIAR: datos de sus proyectos reales. Duplicar bloques para agregar más. -->
+      <div class="proj-card reveal" data-cat="vial">
+        <div class="proj-img"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="1"><path d="M3 12l2-2m0 0l7-7 7 7"/></svg><span class="proj-img-lbl">600 × 400 px</span><span class="proj-tag">Vial</span></div>
+        <div class="proj-body"><h3 class="proj-title">Autopista Regional Norte</h3><p class="proj-meta">Cundinamarca · 2023</p><p class="proj-desc">Levantamiento de 48 km para diseño geométrico y estudios de trazado.</p><div class="proj-stats"><div class="p-stat"><strong>48 km</strong><span>Longitud</span></div><div class="p-stat"><strong>3 meses</strong><span>Duración</span></div><div class="p-stat"><strong>±3 cm</strong><span>Precisión</span></div></div></div>
+      </div>
+      <div class="proj-card reveal d1" data-cat="hidro">
+        <div class="proj-img"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="1"><circle cx="12" cy="12" r="10"/></svg><span class="proj-img-lbl">600 × 400 px</span><span class="proj-tag">Hidráulica</span></div>
+        <div class="proj-body"><h3 class="proj-title">Presa El Palmar — Monitoreo</h3><p class="proj-meta">Boyacá · 2022</p><p class="proj-desc">Red geodésica con 24 puntos y medición trimestral de deformaciones.</p><div class="proj-stats"><div class="p-stat"><strong>24</strong><span>Puntos</span></div><div class="p-stat"><strong>2 años</strong><span>Monit.</span></div><div class="p-stat"><strong>±1 mm</strong><span>Precisión</span></div></div></div>
+      </div>
+      <div class="proj-card reveal d2" data-cat="cat">
+        <div class="proj-img"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="1"><rect x="3" y="3" width="18" height="18" rx="2"/></svg><span class="proj-img-lbl">600 × 400 px</span><span class="proj-tag">Catastro</span></div>
+        <div class="proj-body"><h3 class="proj-title">Actualización Catastral Municipal</h3><p class="proj-meta">Antioquia · 2023</p><p class="proj-desc">3,200 predios actualizados integrados al sistema IGAC.</p><div class="proj-stats"><div class="p-stat"><strong>3.2K</strong><span>Predios</span></div><div class="p-stat"><strong>6 meses</strong><span>Duración</span></div><div class="p-stat"><strong>IGAC</strong><span>Integración</span></div></div></div>
+      </div>
+      <div class="proj-card reveal" data-cat="min">
+        <div class="proj-img"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5z"/></svg><span class="proj-img-lbl">600 × 400 px</span><span class="proj-tag">Minería</span></div>
+        <div class="proj-body"><h3 class="proj-title">Mina a Cielo Abierto — Volúmenes</h3><p class="proj-meta">Cesar · 2022</p><p class="proj-desc">Vuelos mensuales para control de volúmenes de extracción y acopio.</p><div class="proj-stats"><div class="p-stat"><strong>850 ha</strong><span>Área</span></div><div class="p-stat"><strong>12 vuelos</strong><span>Campaña</span></div><div class="p-stat"><strong>±5 cm</strong><span>Precisión</span></div></div></div>
+      </div>
+      <div class="proj-card reveal d1" data-cat="urb">
+        <div class="proj-img"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="1"><rect x="3" y="3" width="18" height="18"/></svg><span class="proj-img-lbl">600 × 400 px</span><span class="proj-tag">Urbano</span></div>
+        <div class="proj-body"><h3 class="proj-title">Plan Parcial Urbanístico — Zona Norte</h3><p class="proj-meta">Medellín · 2023</p><p class="proj-desc">Levantamiento para plan parcial de 180 ha con cartografía temática.</p><div class="proj-stats"><div class="p-stat"><strong>180 ha</strong><span>Área</span></div><div class="p-stat"><strong>4 meses</strong><span>Duración</span></div><div class="p-stat"><strong>1:1000</strong><span>Escala</span></div></div></div>
+      </div>
+      <div class="proj-card reveal d2" data-cat="hidro">
+        <div class="proj-img"><svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="1"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><span class="proj-img-lbl">600 × 400 px</span><span class="proj-tag">Hidráulica</span></div>
+        <div class="proj-body"><h3 class="proj-title">Canal Multipropósito — Batimetría</h3><p class="proj-meta">Valle del Cauca · 2021</p><p class="proj-desc">Batimetría de 32 km de canal para proyecto de riego tecnificado.</p><div class="proj-stats"><div class="p-stat"><strong>32 km</strong><span>Canal</span></div><div class="p-stat"><strong>45 días</strong><span>Campo</span></div><div class="p-stat"><strong>±2 cm</strong><span>Precisión</span></div></div></div>
+      </div>
+    </div>
+
+    <div class="reveal" style="text-align:center;margin-top:4rem;padding:3rem;border:1px solid var(--border);background:var(--surface)">
+      <div class="label" style="justify-content:center;margin-bottom:1rem">¿Proyecto Similar?</div>
+      <h3 style="font-family:var(--ff-h);font-size:2rem;color:var(--text);margin-bottom:1rem">Cuéntenos su <span style="color:var(--gold)">requerimiento</span></h3>
+      <p style="color:var(--text2);margin-bottom:2rem;max-width:500px;margin-left:auto;margin-right:auto">Analizamos cada proyecto y diseñamos la solución más eficiente.</p>
+      <a href="contacto.html" class="btn btn-gold">Solicitar Cotización →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand"><a href="index.html" class="logo"><div class="logo-diamond"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="2"><polygon points="12 2 22 20 2 20"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="16" x2="16" y2="16"/></svg></div><div class="logo-words"><div class="logo-name">GeoSurvey Pro</div><div class="logo-tag">Topografía & Geodesia</div></div></a><p>Precisión y tecnología para sus proyectos.</p><div class="foot-socials"><a href="#" class="soc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div></div>
+    <div class="foot-col"><h4>Servicios</h4><div class="foot-links"><a href="servicios.html">Levantamiento Topográfico</a><a href="servicios.html">Geodesia GPS</a><a href="servicios.html">Fotogrametría</a></div></div>
+    <div class="foot-col"><h4>Empresa</h4><div class="foot-links"><a href="index.html">Inicio</a><a href="proyectos.html">Proyectos</a><a href="equipo.html">Equipo</a><a href="contacto.html">Contacto</a></div></div>
+    <div class="foot-col"><h4>Contacto</h4><div class="foot-links"><a href="tel:+573001234567">+57 300 123 4567</a><!-- ★ --><a href="mailto:info@empresa.com">info@empresa.com</a><!-- ★ --></div></div>
+  </div>
+  <div class="foot-bottom"><span class="foot-copy">© 2024 GeoSurvey Pro.</span><div class="foot-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div></div>
+</footer>
+<script src="js/main.js"></script>
+</body>
+</html>

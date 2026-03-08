@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto — GeoSurvey Pro</title><!-- ★ CAMBIAR -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-diamond"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="2"><polygon points="12 2 22 20 2 20"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="16" x2="16" y2="16"/></svg></div>
+      <div class="logo-words"><div class="logo-name">GeoSurvey Pro</div><div class="logo-tag">Topografía & Geodesia</div></div><!-- ★ CAMBIAR -->
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="contacto.html" class="nav-cta active">Contacto</a>
+    </div>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="banner">
+  <div class="banner-bg"></div>
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> › <span>Contacto</span></div>
+    <h1 class="banner-title">Contáctenos</h1>
+  </div>
+</div>
+
+<!-- CONTACTO PRINCIPAL -->
+<section style="background:var(--surface)">
+  <div class="wrap">
+    <div class="contact-grid">
+
+      <!-- INFO DE CONTACTO -->
+      <div>
+        <div class="label reveal">Información de Contacto</div>
+        <h2 class="h2 reveal" style="font-size:2.5rem">Hablemos de<br><em>su Proyecto</em></h2>
+        <p class="reveal" style="color:var(--text2);font-size:1rem;line-height:1.85;margin-bottom:2.5rem">
+          Atendemos su consulta y cotización. Respuesta garantizada en menos de 24 horas hábiles.<!-- ★ CAMBIAR -->
+        </p>
+
+        <!-- ★ CAMBIAR: todos los datos reales de contacto -->
+        <div class="c-detail reveal">
+          <div class="c-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div>
+            <h4>Teléfono / WhatsApp</h4>
+            <p><a href="tel:+573001234567">+57 300 123 4567</a></p>
+            <p><a href="tel:+5716001234">+57 1 600 1234</a> (oficina)</p>
+          </div>
+        </div>
+
+        <div class="c-detail reveal">
+          <div class="c-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+          <div>
+            <h4>Correo Electrónico</h4>
+            <p><a href="mailto:info@empresa.com">info@empresa.com</a></p>
+            <p><a href="mailto:cotizaciones@empresa.com">cotizaciones@empresa.com</a></p>
+          </div>
+        </div>
+
+        <div class="c-detail reveal">
+          <div class="c-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <div>
+            <h4>Dirección</h4>
+            <p>Calle 100 #15-42, Piso 8</p><!-- ★ CAMBIAR -->
+            <p>Bogotá, D.C., Colombia</p>
+          </div>
+        </div>
+
+        <div class="c-detail reveal">
+          <div class="c-ico"><svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+          <div>
+            <h4>Horario de Atención</h4>
+            <p>Lunes a Viernes: 8:00 — 18:00</p><!-- ★ CAMBIAR -->
+            <p>Sábados: 8:00 — 13:00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULARIO -->
+      <div class="reveal">
+        <div class="contact-form">
+          <div class="label" style="margin-bottom:1.5rem">Formulario de Solicitud</div>
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="nombre">Nombre Completo *</label>
+                <input class="form-input" type="text" id="nombre" name="nombre" placeholder="Su nombre completo" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="empresa">Empresa / Entidad</label>
+                <input class="form-input" type="text" id="empresa" name="empresa" placeholder="Nombre de su empresa">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="email">Correo Electrónico *</label>
+                <input class="form-input" type="email" id="email" name="email" placeholder="correo@empresa.com" required>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="telefono">Teléfono / WhatsApp</label>
+                <input class="form-input" type="tel" id="telefono" name="telefono" placeholder="+57 300 000 0000">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="servicio">Servicio de Interés</label>
+              <select class="form-select" id="servicio" name="servicio">
+                <option value="">— Seleccione un servicio —</option>
+                <option>Levantamiento Topográfico</option>
+                <option>Geodesia y GPS</option>
+                <option>Fotogrametría / Drones</option>
+                <option>Cartografía Digital y SIG</option>
+                <option>Monitoreo Geodésico</option>
+                <option>Catastro y Titulación</option>
+                <option>Otro servicio</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label" for="ubicacion">Ubicación del Proyecto</label>
+                <input class="form-input" type="text" id="ubicacion" name="ubicacion" placeholder="Ciudad / Departamento">
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="area">Área Aproximada</label>
+                <input class="form-input" type="text" id="area" name="area" placeholder="Ej: 50 ha / 5 km">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="mensaje">Descripción del Proyecto *</label>
+              <textarea class="form-textarea" id="mensaje" name="mensaje" placeholder="Describa su proyecto y los entregables que necesita..." required></textarea>
+            </div>
+            <div class="form-group" style="margin-bottom:0">
+              <label style="display:flex;align-items:flex-start;gap:.75rem;cursor:pointer">
+                <input type="checkbox" id="privacidad" name="privacidad" style="margin-top:4px;accent-color:var(--gold)" required>
+                <span style="font-size:.88rem;color:var(--text2);line-height:1.6">He leído y acepto la <a href="#" style="color:var(--gold)">Política de Privacidad</a> y el tratamiento de mis datos.</span>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-gold form-submit" style="margin-top:1.5rem">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Enviar Solicitud
+            </button>
+            <div id="formResp" class="form-resp"></div>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MAPA -->
+<section style="background:var(--bg);padding-top:0;padding-bottom:5rem">
+  <div class="wrap">
+    <div class="label reveal">Ubicación</div>
+    <div class="map-wrap reveal">
+      <!--
+        ★ PARA AGREGAR MAPA REAL:
+        1. Ve a maps.google.com y busca tu dirección
+        2. Clic en "Compartir" → "Insertar un mapa"
+        3. Copia el <iframe> y reemplaza TODO este bloque
+        4. Al iframe agrégale: style="width:100%;height:100%;border:none;filter:grayscale(1) invert(.85) hue-rotate(180deg)"
+      -->
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="1"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+      <span class="map-lbl">Reemplazar con iframe de Google Maps de su ubicación</span>
+    </div>
+  </div>
+</section>
+
+<!-- DATOS RÁPIDOS -->
+<section style="background:var(--surface);padding:4rem 2rem">
+  <div class="wrap">
+    <div class="tiras">
+      <!-- ★ CAMBIAR: sus promesas de servicio reales -->
+      <div class="tira-blk reveal"><div class="tira-l">Respuesta Garantizada</div><div class="tira-n">24 hrs</div><p class="tira-d">Tiempo máximo de respuesta a su consulta</p></div>
+      <div class="tira-blk reveal d1"><div class="tira-l">Cotización</div><div class="tira-n">Gratis</div><p class="tira-d">Sin compromiso de contratación</p></div>
+      <div class="tira-blk reveal d2"><div class="tira-l">Cobertura</div><div class="tira-n">Nacional</div><p class="tira-d">Servicio en todo el territorio</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a href="index.html" class="logo"><div class="logo-diamond"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="2"><polygon points="12 2 22 20 2 20"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="16" x2="16" y2="16"/></svg></div><div class="logo-words"><div class="logo-name">GeoSurvey Pro</div><div class="logo-tag">Topografía & Geodesia</div></div></a><!-- ★ CAMBIAR -->
+      <p>Precisión y tecnología para sus proyectos.</p><!-- ★ CAMBIAR -->
+      <div class="foot-socials"><a href="#" class="soc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div>
+    </div>
+    <div class="foot-col"><h4>Servicios</h4><div class="foot-links"><a href="servicios.html">Levantamiento Topográfico</a><a href="servicios.html">Geodesia GPS</a><a href="servicios.html">Fotogrametría</a></div></div>
+    <div class="foot-col"><h4>Empresa</h4><div class="foot-links"><a href="index.html">Inicio</a><a href="proyectos.html">Proyectos</a><a href="equipo.html">Equipo</a><a href="contacto.html">Contacto</a></div></div>
+    <div class="foot-col"><h4>Contacto</h4><div class="foot-links"><a href="tel:+573001234567">+57 300 123 4567</a><!-- ★ CAMBIAR --><a href="mailto:info@empresa.com">info@empresa.com</a><!-- ★ CAMBIAR --><a href="#">Ciudad, País</a></div></div>
+  </div>
+  <div class="foot-bottom">
+    <span class="foot-copy">© 2024 GeoSurvey Pro. Todos los derechos reservados.</span><!-- ★ CAMBIAR -->
+    <div class="foot-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios — GeoSurvey Pro</title><!-- ★ CAMBIAR -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="cur" id="cur"></div>
+<div class="cur-ring" id="curRing"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="logo">
+      <div class="logo-diamond"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="2"><polygon points="12 2 22 20 2 20"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="16" x2="16" y2="16"/></svg></div>
+      <div class="logo-words"><div class="logo-name">GeoSurvey Pro</div><div class="logo-tag">Topografía & Geodesia</div></div><!-- ★ CAMBIAR -->
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Inicio</a>
+      <a href="servicios.html" class="active">Servicios</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="equipo.html">Equipo</a>
+      <a href="contacto.html" class="nav-cta">Contacto</a>
+    </div>
+    <button class="ham" id="ham"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="banner">
+  <div class="banner-bg"></div>
+  <div class="banner-overlay"></div>
+  <div class="banner-content">
+    <div class="breadcrumb"><a href="index.html">Inicio</a> › <span>Servicios</span></div>
+    <h1 class="banner-title">Nuestros<br>Servicios</h1>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section style="background:var(--bg)">
+  <div class="wrap">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center">
+      <div>
+        <div class="label reveal">Lo que Hacemos</div>
+        <h2 class="h2 reveal">Tecnología de<br><em>Precisión</em> para<br>cada Proyecto</h2>
+      </div>
+      <p class="reveal" style="color:var(--text2);font-size:1.1rem;line-height:1.9">
+        <!-- ★ CAMBIAR -->
+        Ofrecemos soluciones técnicas integrales usando la tecnología más avanzada del sector geomático: receptores GNSS de doble frecuencia, estaciones totales robotizadas, drones profesionales y escáner láser 3D.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ACORDEÓN SERVICIOS -->
+<section style="background:var(--surface);padding-top:0">
+  <div class="wrap">
+    <div class="filters">
+      <button class="f-btn active" data-f="all">Todos</button>
+      <button class="f-btn" data-f="topo">Topografía</button>
+      <button class="f-btn" data-f="geo">Geodesia</button>
+      <button class="f-btn" data-f="foto">Fotogrametría</button>
+      <button class="f-btn" data-f="carto">Cartografía</button>
+      <button class="f-btn" data-f="cat">Catastro</button>
+    </div>
+
+    <!-- ★ CAMBIAR: título y características de cada servicio -->
+    <div class="acc-item reveal" data-cat="topo">
+      <div class="acc-head" onclick="toggleAcc(this)">
+        <h3><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3"/></svg>Levantamiento Topográfico <span>TOPO · 01</span></h3>
+        <div class="acc-ico">+</div>
+      </div>
+      <div class="acc-body">
+        <p style="color:var(--text2);font-size:1rem;line-height:1.85;max-width:800px">Realizamos levantamientos de alta precisión con estaciones totales robotizadas y receptores GNSS. Entregamos planimetría, altimetría, curvas de nivel y MDT.</p>
+        <div class="feat-grid">
+          <div class="feat"><p>Levantamiento planimétrico y altimétrico</p></div>
+          <div class="feat"><p>Perfiles longitudinales y transversales</p></div>
+          <div class="feat"><p>Curvas de nivel con intervalos variables</p></div>
+          <div class="feat"><p>Modelos digitales de terreno (MDT)</p></div>
+          <div class="feat"><p>Replanteo de obras civiles</p></div>
+          <div class="feat"><p>Entregables en AutoCAD, Civil 3D y GIS</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item reveal" data-cat="geo">
+      <div class="acc-head" onclick="toggleAcc(this)">
+        <h3><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20"/></svg>Geodesia y Redes GPS <span>GEO · 02</span></h3>
+        <div class="acc-ico">+</div>
+      </div>
+      <div class="acc-body">
+        <p style="color:var(--text2);font-size:1rem;line-height:1.85;max-width:800px">Establecimiento y densificación de redes geodésicas. Procesamiento con software científico para máxima precisión posicional.</p>
+        <div class="feat-grid">
+          <div class="feat"><p>Redes geodésicas de orden 1 y 2</p></div>
+          <div class="feat"><p>Control horizontal y vertical</p></div>
+          <div class="feat"><p>Posicionamiento estático y cinemático</p></div>
+          <div class="feat"><p>Nivelación de precisión geométrica</p></div>
+          <div class="feat"><p>Transformación entre sistemas de referencia</p></div>
+          <div class="feat"><p>Gravimetría y geoidimetría</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item reveal" data-cat="foto">
+      <div class="acc-head" onclick="toggleAcc(this)">
+        <h3><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Fotogrametría y Drones UAV <span>FOTO · 03</span></h3>
+        <div class="acc-ico">+</div>
+      </div>
+      <div class="acc-body">
+        <p style="color:var(--text2);font-size:1rem;line-height:1.85;max-width:800px">Levantamientos aerofotogramétricos con drones profesionales para ortofotomapas de alta resolución y modelos 3D.</p>
+        <div class="feat-grid">
+          <div class="feat"><p>Ortofotomapas hasta 2 cm/px GSD</p></div>
+          <div class="feat"><p>Modelos digitales de superficie (MDS)</p></div>
+          <div class="feat"><p>Nubes de puntos de alta densidad</p></div>
+          <div class="feat"><p>Inspección de infraestructura</p></div>
+          <div class="feat"><p>Mapeo de zonas de difícil acceso</p></div>
+          <div class="feat"><p>Cálculo de volúmenes de acopio</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item reveal" data-cat="carto">
+      <div class="acc-head" onclick="toggleAcc(this)">
+        <h3><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>Cartografía Digital y SIG <span>CARTO · 04</span></h3>
+        <div class="acc-ico">+</div>
+      </div>
+      <div class="acc-body">
+        <p style="color:var(--text2);font-size:1rem;line-height:1.85;max-width:800px">Elaboración y actualización de cartografía temática. Implementación de plataformas GIS para gestión de información geográfica.</p>
+        <div class="feat-grid">
+          <div class="feat"><p>Cartografía base y temática</p></div>
+          <div class="feat"><p>Sistemas de información geográfica</p></div>
+          <div class="feat"><p>Digitalización y vectorización</p></div>
+          <div class="feat"><p>Análisis espacial y geoprocesamiento</p></div>
+          <div class="feat"><p>Planos urbanos y prediales</p></div>
+          <div class="feat"><p>Publicación de mapas web (WebGIS)</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item reveal" data-cat="topo">
+      <div class="acc-head" onclick="toggleAcc(this)">
+        <h3><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>Monitoreo Geodésico Estructural <span>MON · 05</span></h3>
+        <div class="acc-ico">+</div>
+      </div>
+      <div class="acc-body">
+        <p style="color:var(--text2);font-size:1rem;line-height:1.85;max-width:800px">Control de deformaciones en presas, túneles y taludes mediante redes de monitoreo geodésico con lectura periódica o en tiempo real.</p>
+        <div class="feat-grid">
+          <div class="feat"><p>Monitoreo de presas y embalses</p></div>
+          <div class="feat"><p>Control de túneles y excavaciones</p></div>
+          <div class="feat"><p>Seguimiento de taludes</p></div>
+          <div class="feat"><p>Asentamiento de edificaciones</p></div>
+          <div class="feat"><p>Redes automatizadas con sensores</p></div>
+          <div class="feat"><p>Informes técnicos periódicos</p></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="acc-item reveal" data-cat="cat">
+      <div class="acc-head" onclick="toggleAcc(this)">
+        <h3><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>Catastro, Deslinde y Titulación <span>CAT · 06</span></h3>
+        <div class="acc-ico">+</div>
+      </div>
+      <div class="acc-body">
+        <p style="color:var(--text2);font-size:1rem;line-height:1.85;max-width:800px">Levantamientos catastrales, deslinde de predios y trámites de titulación ante entidades gubernamentales.</p>
+        <div class="feat-grid">
+          <div class="feat"><p>Levantamiento catastral predial</p></div>
+          <div class="feat"><p>Deslinde y amojonamiento</p></div>
+          <div class="feat"><p>Subdivisión y englobe de predios</p></div>
+          <div class="feat"><p>Planos para trámites legales</p></div>
+          <div class="feat"><p>Rectificación de áreas y linderos</p></div>
+          <div class="feat"><p>Integración a sistemas IGAC</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TECNOLOGÍA -->
+<section style="background:var(--bg)">
+  <div class="wrap">
+    <div class="label reveal">Equipamiento</div>
+    <h2 class="h2 reveal">Tecnología de<br><em>Vanguardia</em></h2>
+    <div class="tech-grid">
+      <!-- ★ CAMBIAR: equipos reales de su empresa -->
+      <div class="tech reveal"><div class="tech-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 010 20"/></svg></div><div><h4>Receptores GNSS Leica</h4><p>Posicionamiento de doble frecuencia con precisión sub-centimétrica.</p></div></div>
+      <div class="tech reveal d1"><div class="tech-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg></div><div><h4>Estación Total Robótica</h4><p>Seguimiento automático de prisma con precisión angular de 1".</p></div></div>
+      <div class="tech reveal d2"><div class="tech-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg></div><div><h4>Drones DJI Matrice</h4><p>UAV profesional con cámara métrica para fotogrametría aérea.</p></div></div>
+      <div class="tech reveal"><div class="tech-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="9" height="9"/><rect x="13" y="2" width="9" height="9"/><rect x="13" y="13" width="9" height="9"/><rect x="2" y="13" width="9" height="9"/></svg></div><div><h4>Escáner Láser 3D</h4><p>Nubes de puntos densas para modelado BIM y documentación AS-BUILT.</p></div></div>
+      <div class="tech reveal d1"><div class="tech-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div><div><h4>AutoCAD Civil 3D</h4><p>Procesamiento y entrega en formato estándar industrial.</p></div></div>
+      <div class="tech reveal d2"><div class="tech-ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><div><h4>Agisoft Metashape</h4><p>Procesamiento fotogramétrico para ortofotomapas y modelos 3D.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULADORA -->
+<section style="background:var(--surface)">
+  <div class="wrap-sm">
+    <div class="label reveal">Herramienta</div>
+    <h2 class="h2 reveal">Calculadora<br><em>Topográfica</em></h2>
+    <p class="reveal" style="color:var(--text2);margin-bottom:0">Estimación rápida. Para cálculos precisos solicite cotización formal.</p>
+    <div class="calc-box reveal">
+      <form id="calcForm">
+        <div class="form-row" style="grid-template-columns:1fr 1fr 1fr">
+          <div class="form-group">
+            <label class="form-label">Distancia (m)</label>
+            <input class="form-input" id="calcDist" type="number" placeholder="100" min="0" step="0.01">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Ángulo (°)</label>
+            <input class="form-input" id="calcAngle" type="number" placeholder="45" min="0" max="360">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Tipo de Cálculo</label>
+            <select class="form-select" id="calcType">
+              <option value="area">Área</option>
+              <option value="perimeter">Perímetro</option>
+              <option value="slope">Pendiente (%)</option>
+              <option value="horizontal">Distancia Horizontal</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-gold">Calcular →</button>
+      </form>
+      <div id="calcResult"></div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section style="background:var(--bg)">
+  <div class="wrap">
+    <div class="label reveal">Metodología</div>
+    <h2 class="h2 reveal">Cómo<br><em>Trabajamos</em></h2>
+    <div class="process-list">
+      <!-- ★ CAMBIAR: pasos de su proceso real -->
+      <div class="proc reveal"><div class="proc-n">01</div><div><h3>Consulta y Diagnóstico</h3><p>Analizamos sus requerimientos, visitamos el sitio y determinamos la metodología más eficiente.</p></div></div>
+      <div class="proc reveal"><div class="proc-n">02</div><div><h3>Propuesta Técnica</h3><p>Elaboramos propuesta detallada con cronograma, personal, equipos y entregables.</p></div></div>
+      <div class="proc reveal"><div class="proc-n">03</div><div><h3>Trabajo de Campo</h3><p>Ejecutamos mediciones con rigor técnico, siguiendo protocolos de calidad.</p></div></div>
+      <div class="proc reveal"><div class="proc-n">04</div><div><h3>Procesamiento y Control de Calidad</h3><p>Procesamos datos aplicando ajustes estadísticos y validaciones para garantizar la precisión.</p></div></div>
+      <div class="proc reveal"><div class="proc-n">05</div><div><h3>Entrega y Soporte</h3><p>Entregamos todos los productos pactados con memoria descriptiva y soporte técnico post-proyecto.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <a href="index.html" class="logo"><div class="logo-diamond"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#c9a86c" stroke-width="2"><polygon points="12 2 22 20 2 20"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="16" x2="16" y2="16"/></svg></div><div class="logo-words"><div class="logo-name">GeoSurvey Pro</div><div class="logo-tag">Topografía & Geodesia</div></div></a><!-- ★ CAMBIAR -->
+      <p>Precisión y tecnología para sus proyectos.</p><!-- ★ CAMBIAR -->
+      <div class="foot-socials"><a href="#" class="soc"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a></div>
+    </div>
+    <div class="foot-col"><h4>Servicios</h4><div class="foot-links"><a href="servicios.html">Levantamiento Topográfico</a><a href="servicios.html">Geodesia GPS</a><a href="servicios.html">Fotogrametría</a><a href="servicios.html">Catastro</a></div></div>
+    <div class="foot-col"><h4>Empresa</h4><div class="foot-links"><a href="index.html">Inicio</a><a href="proyectos.html">Proyectos</a><a href="equipo.html">Equipo</a><a href="contacto.html">Contacto</a></div></div>
+    <div class="foot-col"><h4>Contacto</h4><div class="foot-links"><a href="tel:+573001234567">+57 300 123 4567</a><!-- ★ --><a href="mailto:info@empresa.com">info@empresa.com</a><!-- ★ --></div></div>
+  </div>
+  <div class="foot-bottom"><span class="foot-copy">© 2024 GeoSurvey Pro.</span><!-- ★ --><div class="foot-legal"><a href="#">Privacidad</a><a href="#">Términos</a></div></div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
